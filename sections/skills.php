@@ -1,4 +1,4 @@
-<section class="box py-4 bg-white">
+<section class="box pt-4 pb-5 bg-white">
 
     <h2>Umiejętności</h2>
 
@@ -41,6 +41,14 @@
             "name" => "C++",
             "points" => 2
         ],
+        [
+            "name" => "MySql",
+            "points" => 3
+        ],
+        [
+            "name" => "CI/CD",
+            "points" => 2
+        ],
     ];
     ?>
 
@@ -55,7 +63,7 @@
 
 
         for ($i = 0; $i < 3; $i++) {
-            echo '<div class="col-4">';
+            echo '<div class="col-12 col-md-6 col-lg-4">';
 
             for ($j = 0; $j < $skillsInColumns && $skillIndex < $skillsCount; $j++) {
 
