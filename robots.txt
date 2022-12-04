@@ -1,0 +1,5 @@
+User-agent: Googlebot
+
+Allow: /
+
+Sitemap: https://adamczwordon.pl/sitemap.xml
