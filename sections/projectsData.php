@@ -69,17 +69,23 @@ $projects = [
         "linkText" => "Zombie Apocalypse",
         "description" => 
             "<p>Gra multiplayer dla dwóch osób.</p>
-            <p>Gra stwo</p>",
-        'techStack' => ['JavaScript', 'Pixi.js', 'Node.js', 'Express'],
+             <p>Gra dla dwóch graczy polegająca na przetrwaniu jak najdłużej w obliczu nadciągającej hordy zombie</p>",
+        'techStack' => ['JavaScript', 'Pixi.js', 'Node.js', 'Express', 'Buzzer.js', 'Nipple.js'],
         'images' => [
             [
                 'src' => './images/zombie-apocalypse/game',
                 'alt' => 'multiplayer gamewith surviovrs and zombies',
                 'heading' => 'Gra multiplayer',
-                'description' => 'Gra dla dwóch graczy polegająca na przetrwaniu jak najdłużej w obliczu nadciągającej hordy zombie',
+                'description' => 'Strzelaj do zombie i nie daj się ugryźć',
+            ],
+            [
+                'src' => './images/zombie-apocalypse/menu',
+                'alt' => 'menu and options of the game',
+                'heading' => 'Menu gry',
+                'description' => 'Wybór nicku i ranking najlepszych graczy',
             ],
         ],
-        'githubLink' => null,
+        'githubLink' => 'https://github.com/Smokolisz/Zombie-Apocalypse',
     ],
 ];
 
