@@ -7,17 +7,17 @@ require_once 'projectsData.php';
 <h2 class="text-center pt-5">Projekty</h2>
 
 <?php
-foreach($projects as $project) {
+foreach($projects as $projectId => $project) {
 ?>
 
 <section class="box mt-4 py-4 bg-white">
 
-    <div id="carouselExampleControls" class="carousel slide mx-auto" data-bs-ride="carousel">
+    <div id="carousel-<?= $projectId ?>" class="carousel slide mx-auto" data-bs-ride="carousel">
         <?php if(count($project['images']) > 0) { ?>
             <div class="carousel-indicators">
                 <?php
                 foreach($project['images'] as $key => $image) {
-                    echo '<button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="'.$key.'" class="'.($key == 0 ? 'active' : '').'" aria-current="true" aria-label="Slide '.$key.'"></button>';
+                    echo '<button type="button" data-bs-target="#carousel-'.$projectId.'" data-bs-slide-to="'.$key.'" class="'.($key == 0 ? 'active' : '').'" aria-current="true" aria-label="Slide '.$key.'"></button>';
                 } ?>
             </div>
             <div class="carousel-inner">
