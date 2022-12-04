@@ -65,7 +65,7 @@ foreach($projects as $projectId => $project) {
 
     <?= 
     ($project['githubLink'] != null ? 
-    '<p><a href="'.$project['githubLink'].'" target="_blank">Repozytorium</a></p>' 
+    '<p><a href="'.$project['githubLink'].'" target="_blank" itemprop="url" rel="me">Repozytorium</a></p>' 
     : ''
     )?>
 

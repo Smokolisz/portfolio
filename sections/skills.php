@@ -1,6 +1,6 @@
-<section class="box pt-4 pb-5 bg-white">
+<section class="box pt-4 pb-5 bg-white" itemscope itemtype="http://schema.org/ItemList">
 
-    <h2>Umiejętności</h2>
+    <h2 itemprop="name">Umiejętności</h2>
     <p class="text-body">Punkty sygnalizują moje poczucie pewności z w danych technologiach</p>
 
     <?php
@@ -76,7 +76,7 @@
                 }
 
                 echo '
-                        <div class="pt-4">
+                        <div class="pt-4" itemprop="itemListElement">
                             <div class="h5">' . $skill['name'] . '</div>
                             <div class="d-flex">' . $pointsHtml . '</div>
                         </div>
