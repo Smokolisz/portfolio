@@ -1,7 +1,7 @@
 const path = require('path');
 
 
-// const PurgecssPlugin = require('purgecss-webpack-plugin');
+const PurgeCSSPlugin = require('purgecss-webpack-plugin')
 
 module.exports = {
     entry: ['./src/index.js', './src/index.css'],
@@ -22,8 +22,8 @@ module.exports = {
         ]
     },
     plugins: [
-        // new PurgecssPlugin({
-        //     paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
-        // })
+        new PurgecssPlugin({
+            paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
+        })
     ]
 };

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -24,14 +24,14 @@
                 <span itemprop="name">Adam Czwordon</span>
                 <br>
                 <span class="h4" itemscope itemtype="http://schema.org/Event/Job">Programista
-                    <span class="d-inline-block ms-1" style="border:2px solid black;border-radius:20px;padding:1px 8px;" itemprop="name">
-                        <span style="color:#474A8A;">Full</span>-<span style="color:#e0ca3e;">Stack</span>
+                    <span class="d-inline-block ms-1 profession" itemprop="name">
+                        <span style="color:#474A8A;">Full</span>-<span class="stack">Stack</span>
                     </span>
                 </span>
             </h1>
         </header>
 
-        <!-- <p itemprop="description">about yourself/personal statement here</p> -->
+        <!-- <p itemprop="description">Strona dokumentująca moje doświadczenie w IT</p> -->
 
         <!-- Skills -->
         <?php include "./sections/skills.php"; ?>
@@ -41,7 +41,7 @@
         <?php include "./sections/projects.php"; ?>
 
 
-        <footer class="text-center py-4 text-muted">
+        <footer class="text-center py-4 text-secondary">
             &copy; Made by <a href="mailto:adamczwordon@wp.pl" class="text-secondary" itemprop="email">Adam Czwordon</a> | <a href="https://github.com/Smokolisz" class="text-secondary" target="_blank" itemprop="url" rel="me">GitHub</a>
         </footer>
 

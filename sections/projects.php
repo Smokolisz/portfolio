@@ -26,17 +26,17 @@ foreach($projects as $projectId => $project) {
                 ?>
 
                 <div class="carousel-item <?= $key == 0 ? 'active' : '' ?>" itemscope itemtype="http://schema.org/Thing">
-                    <picture class="d-block w-100">
+                    <picture class="d-block w-100" itemprop="image">
                         <!-- big screens -->
                         <source srcset="<?= $image['src'] ?>.webp" type="image/jpg" media="(min-width: 450px)" width="400" height="264">
                         <source srcset="<?= $image['src'] ?>.jpg" type="image/jpg" media="(min-width: 450px)" width="400" height="264">
                         <!-- small screens -->
                         <source srcset="<?= $image['src'] ?>-min.webp" type="image/jpg" width="900" height="445">
                         <source srcset="<?= $image['src'] ?>-min.jpg" type="image/jpg" width="900" height="445">
-                        <img src="<?= $image['src'] ?>-min.webp" alt="<?= $image['alt'] ?>" width="900" height="445" class="d-block w-100 img-fluid" <?= ($key > 0 ? 'loading="lazy"' : '') ?>  itemprop="image" subjectOf="CreativeWork">
+                        <img src="<?= $image['src'] ?>-min.webp" alt="<?= $image['alt'] ?>" width="900" height="445" class="d-block w-100 img-fluid" <?= ($key > 0 ? 'loading="lazy"' : '') ?> itemprop="CreativeWork">
                     </picture>
                     <div class="carousel-caption d-none d-md-block pb-3">
-                        <h5><?= $image['heading'] ?></h5>
+                        <h3 class="h5"><?= $image['heading'] ?></h3>
 
                         <?php if($image['description'] != '') {
                             echo '<p>'.$image['description'].'</p>';
@@ -59,7 +59,7 @@ foreach($projects as $projectId => $project) {
     <?php } // close if images count is bigger than 0 ?> 
 
 
-    <h3 class="text-center pt-3" itemprop="name"><?= $project['title'] ?> <span><a href="<?= $project['link'] ?>" target="_blank"><?= $project['linkText'] ?></a></span></h3>
+    <h4 class="text-center pt-3 h3" itemprop="name"><?= $project['title'] ?> <span><a href="<?= $project['link'] ?>" target="_blank"><?= $project['linkText'] ?></a></span></h4>
 
     <?= $project['description'] ?>
 

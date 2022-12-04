@@ -14,43 +14,43 @@ $projects = [
         'images' => [
             [
                 'src' => './images/firany-witex/home-page',
-                'alt' => 'home page',
+                'alt' => 'Home page',
                 'heading' => 'Strona Główna',
                 'description' => '',
             ],
             [
                 'src' => './images/firany-witex/category-page',
-                'alt' => 'category page',
+                'alt' => 'Category page',
                 'heading' => 'Kategorie',
                 'description' => '',
             ],
             [
                 'src' => './images/firany-witex/addresses-page',
-                'alt' => 'addresses page',
+                'alt' => 'Addresses page',
                 'heading' => 'Książka adresowa klienta',
                 'description' => 'Wygodny sposób zarządzania adresem dostawy',
             ],
             [
                 'src' => './images/firany-witex/cart-page',
-                'alt' => 'orders page',
+                'alt' => 'Cart page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
             ],
             [
                 'src' => './images/firany-witex/orders-page',
-                'alt' => 'orders page',
+                'alt' => 'Orders page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
             ],
             [
                 'src' => './images/firany-witex/admin-orders-page',
-                'alt' => 'orders page',
+                'alt' => 'Admin Orders page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
             ],
             [
                 'src' => './images/firany-witex/messages-page',
-                'alt' => 'orders page',
+                'alt' => 'Messages page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
             ],
@@ -73,13 +73,13 @@ $projects = [
         'images' => [
             [
                 'src' => './images/zombie-apocalypse/game',
-                'alt' => 'multiplayer gamewith surviovrs and zombies',
+                'alt' => 'Multiplayer gamewith surviovrs and zombies',
                 'heading' => 'Gra multiplayer',
                 'description' => 'Strzelaj do zombie i nie daj się ugryźć',
             ],
             [
-                'src' => './images/zombie-apocalypse/menu',
-                'alt' => 'menu and options of the game',
+                'src' => './images/zombie-apocalypse/menu', 
+                'alt' => 'Menu and options of the game',
                 'heading' => 'Menu gry',
                 'description' => 'Wybór nicku i ranking najlepszych graczy',
             ],
