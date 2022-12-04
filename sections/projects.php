@@ -10,7 +10,7 @@ require_once 'projectsData.php';
 foreach($projects as $projectId => $project) {
 ?>
 
-<section class="box mt-4 py-4 bg-white">
+<section class="box mt-4 py-4 bg-white" itemscope itemtype="http://schema.org/CreativeWork">
 
     <div id="carousel-<?= $projectId ?>" class="carousel slide mx-auto" data-bs-ride="carousel">
         <?php if(count($project['images']) > 0) { ?>
@@ -25,7 +25,7 @@ foreach($projects as $projectId => $project) {
                 foreach($project['images'] as $key => $image) {
                 ?>
 
-                <div class="carousel-item <?= $key == 0 ? 'active' : '' ?>">
+                <div class="carousel-item <?= $key == 0 ? 'active' : '' ?>" itemscope itemtype="http://schema.org/Thing">
                     <picture class="d-block w-100">
                         <!-- big screens -->
                         <source srcset="<?= $image['src'] ?>.webp" type="image/jpg" media="(min-width: 450px)" width="400" height="264">
@@ -33,7 +33,7 @@ foreach($projects as $projectId => $project) {
                         <!-- small screens -->
                         <source srcset="<?= $image['src'] ?>-min.webp" type="image/jpg" width="900" height="445">
                         <source srcset="<?= $image['src'] ?>-min.jpg" type="image/jpg" width="900" height="445">
-                        <img src="<?= $image['src'] ?>-min.webp" alt="<?= $image['alt'] ?>" width="900" height="445" class="d-block w-100 img-fluid" <?= ($key > 0 ? 'loading="lazy"' : '') ?>>
+                        <img src="<?= $image['src'] ?>-min.webp" alt="<?= $image['alt'] ?>" width="900" height="445" class="d-block w-100 img-fluid" <?= ($key > 0 ? 'loading="lazy"' : '') ?>  itemprop="image" subjectOf="CreativeWork">
                     </picture>
                     <div class="carousel-caption d-none d-md-block pb-3">
                         <h5><?= $image['heading'] ?></h5>
@@ -59,7 +59,7 @@ foreach($projects as $projectId => $project) {
     <?php } // close if images count is bigger than 0 ?> 
 
 
-    <h3 class="text-center pt-3"><?= $project['title'] ?> <span><a href="<?= $project['link'] ?>" target="_blank"><?= $project['linkText'] ?></a></span></h3>
+    <h3 class="text-center pt-3" itemprop="name"><?= $project['title'] ?> <span><a href="<?= $project['link'] ?>" target="_blank"><?= $project['linkText'] ?></a></span></h3>
 
     <?= $project['description'] ?>
 
@@ -71,7 +71,7 @@ foreach($projects as $projectId => $project) {
 
     <?php
     foreach($project['techStack'] as $tech) {
-        echo '<span class="badge bg-secondary">'.$tech.'</span> ';
+        echo '<span class="badge bg-secondary" itemprop="keywords">'.$tech.'</span> ';
     }
     ?>
 

@@ -68,8 +68,7 @@ $projects = [
         "link" => "https://tim-bunnyhug-29539.herokuapp.com/?nick=xstrikerx",
         "linkText" => "Zombie Apocalypse",
         "description" => 
-            "<p>Gra multiplayer dla dwóch osób.</p>
-             <p>Gra dla dwóch graczy polegająca na przetrwaniu jak najdłużej w obliczu nadciągającej hordy zombie</p>",
+            "<p>Gra dla dwóch graczy polegająca na przetrwaniu jak najdłużej w obliczu nadciągającej hordy zombie</p>",
         'techStack' => ['JavaScript', 'Pixi.js', 'Node.js', 'Express', 'Buzzer.js', 'Nipple.js'],
         'images' => [
             [
