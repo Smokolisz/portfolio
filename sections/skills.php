@@ -1,7 +1,7 @@
 <section class="box pt-4 pb-5 bg-white" itemscope itemtype="http://schema.org/ItemList">
 
     <h2 itemprop="name">Umiejętności</h2>
-    <p class="text-body">Punkty sygnalizują moje poczucie pewności z w danych technologiach</p>
+    <p class="text-body">Punkty sygnalizują moje poczucie pewności w danych technologiach</p>
 
     <?php
     $skillMaxPoints = 6;

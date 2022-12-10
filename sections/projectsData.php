@@ -65,7 +65,7 @@ $projects = [
     // Zombie Apocalypse
     [
         "title" => "Gra Multiplayer",
-        "link" => "https://tim-bunnyhug-29539.herokuapp.com/?nick=xstrikerx",
+        "link" => "http://zombie.adamczwordon.pl",
         "linkText" => "Zombie Apocalypse",
         "description" => 
             "<p>Gra dla dwóch graczy polegająca na przetrwaniu jak najdłużej w obliczu nadciągającej hordy zombie</p>",
