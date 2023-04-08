@@ -1,9 +1,3 @@
-<?php
-
-require_once 'projectsData.php';
-
-?>
-
 <h2 class="text-center pt-5">Projekty</h2>
 
 <?php
@@ -36,7 +30,7 @@ foreach($projects as $projectId => $project) {
                         <img src="<?= $image['src'] ?>-min.webp" alt="<?= $image['alt'] ?>" width="900" height="445" class="d-block w-100 img-fluid" <?= ($key > 0 ? 'loading="lazy"' : '') ?> itemprop="CreativeWork">
                     </picture>
                     <div class="carousel-caption d-none d-md-block pb-3">
-                        <h3 class="h5"><?= $image['heading'] ?></h3>
+                        <h4 class="h5"><?= $image['heading'] ?></h4>
 
                         <?php if($image['description'] != '') {
                             echo '<p>'.$image['description'].'</p>';
@@ -59,7 +53,7 @@ foreach($projects as $projectId => $project) {
     <?php } // close if images count is bigger than 0 ?> 
 
 
-    <h4 class="text-center pt-3 h3" itemprop="name"><?= $project['title'] ?> <span><a href="<?= $project['link'] ?>" target="_blank"><?= $project['linkText'] ?></a></span></h4>
+    <h3 class="text-center pt-3 h3" itemprop="name"><?= $project['title'] ?> <a href="<?= $project['link'] ?>" target="_blank"><?= $project['linkText'] ?></a></h3>
 
     <?= $project['description'] ?>
 

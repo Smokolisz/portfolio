@@ -1,0 +1,1 @@
+purgecss --css src/css/index.css --content src/index.php "src/**/*.js" --output dist/test.css
