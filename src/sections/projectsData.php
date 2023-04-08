@@ -33,8 +33,8 @@ $projects = [
             [
                 'src' => './src/images/firany-witex/cart-page',
                 'alt' => 'Cart page',
-                'heading' => 'Zamówienia klienta',
-                'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
+                'heading' => 'Koszyk',
+                'description' => 'Wygodne zarządzanie produktami w koszyku',
             ],
             [
                 'src' => './src/images/firany-witex/orders-page',
@@ -45,14 +45,14 @@ $projects = [
             [
                 'src' => './src/images/firany-witex/admin-orders-page',
                 'alt' => 'Admin Orders page',
-                'heading' => 'Zamówienia klienta',
-                'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
+                'heading' => 'Zarządzanie zamówieniami',
+                'description' => 'Edycja zamówienia, link do śledzenia paczki i wiele więcej',
             ],
             [
                 'src' => './src/images/firany-witex/messages-page',
                 'alt' => 'Messages page',
-                'heading' => 'Zamówienia klienta',
-                'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
+                'heading' => 'System wiadomości',
+                'description' => 'Klient może zadać pytanie na temat produktu',
             ],
             
         ],
