@@ -30,7 +30,7 @@ foreach($projects as $projectId => $project) {
                         <img src="<?= $image['src'] ?>-min.webp" alt="<?= $image['alt'] ?>" width="900" height="445" class="d-block w-100 img-fluid" <?= ($key > 0 ? 'loading="lazy"' : '') ?> itemprop="CreativeWork">
                     </picture>
                     <div class="carousel-caption d-none d-md-block pb-3">
-                        <h4 class="h5"><?= $image['heading'] ?></h4>
+                        <h3 class="h5"><?= $image['heading'] ?></h3>
 
                         <?php if($image['description'] != '') {
                             echo '<p>'.$image['description'].'</p>';
