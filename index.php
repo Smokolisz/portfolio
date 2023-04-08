@@ -60,7 +60,7 @@
 
 
         <footer class="text-center py-4 text-secondary">
-            &copy; Made by <a href="mailto:adamczwordon@wp.pl" class="text-secondary" itemprop="email">Adam Czwordon</a> | <a href="https://github.com/Smokolisz" class="text-secondary" target="_blank" itemprop="url" rel="me">GitHub</a>
+            &copy; Made by <a href="mailto:adamczwordon@wp.pl" class="text-secondary" itemprop="email">Adam Czwordon</a> | <a href="https://github.com/Smokolisz" class="text-secondary" target="_blank" itemprop="url" rel="me noreferrer">GitHub</a>
         </footer>
 
     </main>

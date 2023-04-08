@@ -53,13 +53,13 @@ foreach($projects as $projectId => $project) {
     <?php } // close if images count is bigger than 0 ?> 
 
 
-    <h3 class="text-center pt-3 h3" itemprop="name"><?= $project['title'] ?> <a href="<?= $project['link'] ?>" target="_blank"><?= $project['linkText'] ?></a></h3>
+    <h3 class="text-center pt-3 h3" itemprop="name"><?= $project['title'] ?> <a href="<?= $project['link'] ?>" target="_blank" rel="noreferrer"><?= $project['linkText'] ?></a></h3>
 
     <?= $project['description'] ?>
 
     <?= 
     ($project['githubLink'] != null ? 
-    '<p><a href="'.$project['githubLink'].'" target="_blank" itemprop="url" rel="me">Repozytorium</a></p>' 
+    '<p><a href="'.$project['githubLink'].'" target="_blank" itemprop="url" rel="me noreferrer">Repozytorium</a></p>' 
     : ''
     )?>
 
