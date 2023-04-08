@@ -9,18 +9,15 @@
 
     <title>Adam Czwordon - Programista Full Stack</title>
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-    <link href="./dist/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./src/css/index.css" rel="stylesheet">
 
     <?php
-    require_once './sections/projectsData.php';
+    require_once './src/sections/projectsData.php';
 
     $websiteURL = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
     foreach($projects as $project) {
-        // $image = $project['images'][0]['src'];
-        // echo '<link rel="preload" href="'.$websiteURL.$image.'.webp" as="image">';
-
         foreach($project['images'] as $image) {
             echo '<link rel="preload" href="'.$websiteURL.$image['src'].'.webp" as="image">';
         }
@@ -48,11 +45,11 @@
         <!-- <p itemprop="description">Strona dokumentująca moje doświadczenie w IT</p> -->
 
         <!-- Skills -->
-        <?php include "./sections/skills.php"; ?>
+        <?php include "./src/sections/skills.php"; ?>
 
 
         <!-- Projects -->
-        <?php include "./sections/projects.php"; ?>
+        <?php include "./src/sections/projects.php"; ?>
 
 
         <footer class="text-center py-4 text-secondary">
