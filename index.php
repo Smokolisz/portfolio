@@ -14,11 +14,11 @@
 
     <!-- <link href="./css/index.min.css" rel="stylesheet"> -->
 
-    <link href="../dist/style.css" rel="stylesheet">
+    <link href="./dist/style.css" rel="stylesheet">
 
 
     <?php
-    require_once './sections/projectsData.php';
+    require_once './src/sections/projectsData.php';
 
     $websiteURL = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
@@ -29,7 +29,7 @@
     }
     ?>
 
-    <script src="../dist/index.js" defer></script>
+    <script src="./dist/index.js" defer></script>
 
 </head>
 
@@ -52,11 +52,11 @@
         <!-- <p itemprop="description">Strona dokumentująca moje doświadczenie w IT</p> -->
 
         <!-- Skills -->
-        <?php include "./sections/skills.php"; ?>
+        <?php include "./src/sections/skills.php"; ?>
 
 
         <!-- Projects -->
-        <?php include "./sections/projects.php"; ?>
+        <?php include "./src/sections/projects.php"; ?>
 
 
         <footer class="text-center py-4 text-secondary">
