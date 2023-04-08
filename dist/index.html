@@ -1,0 +1,11 @@
+<!doctype html><html lang="pl"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Adam Czwordon Portfolio - umiejętności i doświadczenie udokumentowane dziesiątkami projektów w różnych technologiach. Tech stack: PHP/Laravel, HTML/CSS/Bootstrap, JS/Vue/Cordova/Pixi.js"><title>Adam Czwordon - Programista Full Stack</title><link href="../dist/style.css" rel="stylesheet"> <?php
+    require_once './sections/projectsData.php';
+
+    $websiteURL = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
+    foreach($projects as $project) {
+        foreach($project['images'] as $image) {
+            echo '<link rel="preload" href="'.$websiteURL.$image['src'].'.webp" as="image">';
+        }
+    }
+    ?> <script src="../dist/index.js" defer="defer"></script><script defer="defer" src="index.js"></script><link href="style.css" rel="stylesheet"></head><body class="bg-light"><main class="container pt-5" itemscope itemtype="http://schema.org/Person"><header class="pb-4 header"><h1 style="line-height:35px;"><span itemprop="name">Adam Czwordon</span><br><span class="h4" itemscope itemtype="http://schema.org/Event/Job">Programista <span class="d-inline-block ms-1 profession" itemprop="name"><span style="color:#474A8A;">Full</span>-<span class="stack">Stack</span></span></span></h1></header> <?php include "./sections/skills.php"; ?>  <?php include "./sections/projects.php"; ?> <footer class="text-center py-4 text-secondary">&copy; Made by <a href="mailto:adamczwordon@wp.pl" class="text-secondary" itemprop="email">Adam Czwordon</a> | <a href="https://github.com/Smokolisz" class="text-secondary" target="_blank" itemprop="url" rel="me">GitHub</a></footer></main></body></html>

@@ -1,44 +1,63 @@
-const path = require('path');
-const glob = require("glob");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
+'use strict'
 
-const PATHS = {
-  src: path.join(__dirname, "src"),
-};
+const path = require('path')
+const autoprefixer = require('autoprefixer')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 
 module.exports = {
-  entry: "./src/js/index.js",
+  mode: 'production',
+  entry: './src/js/index.js',
   output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "src/dist"),
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: ''
   },
   optimization: {
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: "styles",
-          test: /\.css$/,
-          chunks: "all",
-          enforce: true,
-        },
-      },
-    },
+    usedExports: true, // <- remove unused function
   },
+  devServer: {
+    static: path.resolve(__dirname, 'dist'),
+    port: 8080,
+    hot: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({ template: './src/index.php' })
+  ],
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-    ],
+        test: /\.(scss)$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // publicPath: '../' // if needed to add path prefix to the CSS file
+            }
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: () => [autoprefixer()]
+              }
+            }
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
+      }
+    ]
   },
   plugins: [
+    new HtmlWebpackPlugin({ template: './src/index.php' }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-    }),
-    new PurgeCSSPlugin({
-      paths: () => glob.sync(`${PATHS.src}/**/*.{php,html}`, { nodir: true }),
-    }),
-  ],
-};
+      filename: 'style.css'
+    })
+  ]
+}

@@ -13,43 +13,43 @@ $projects = [
         'techStack' => ['HTML5', 'CSS3', 'JavaScript', 'Vue.js', 'Laravel', 'Bootstrap', 'Webpack', 'CloudFlare'],
         'images' => [
             [
-                'src' => './src/images/firany-witex/home-page',
+                'src' => './images/firany-witex/home-page',
                 'alt' => 'Home page',
                 'heading' => 'Strona Główna',
                 'description' => '',
             ],
             [
-                'src' => './src/images/firany-witex/category-page',
+                'src' => './images/firany-witex/category-page',
                 'alt' => 'Category page',
                 'heading' => 'Kategorie',
                 'description' => '',
             ],
             [
-                'src' => './src/images/firany-witex/addresses-page',
+                'src' => './images/firany-witex/addresses-page',
                 'alt' => 'Addresses page',
                 'heading' => 'Książka adresowa klienta',
                 'description' => 'Wygodny sposób zarządzania adresem dostawy',
             ],
             [
-                'src' => './src/images/firany-witex/cart-page',
+                'src' => './images/firany-witex/cart-page',
                 'alt' => 'Cart page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
             ],
             [
-                'src' => './src/images/firany-witex/orders-page',
+                'src' => './images/firany-witex/orders-page',
                 'alt' => 'Orders page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
             ],
             [
-                'src' => './src/images/firany-witex/admin-orders-page',
+                'src' => './images/firany-witex/admin-orders-page',
                 'alt' => 'Admin Orders page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
             ],
             [
-                'src' => './src/images/firany-witex/messages-page',
+                'src' => './images/firany-witex/messages-page',
                 'alt' => 'Messages page',
                 'heading' => 'Zamówienia klienta',
                 'description' => 'Przejrzysta tabelka ze szczegółami zamówienia',
@@ -72,13 +72,13 @@ $projects = [
         'techStack' => ['JavaScript', 'Pixi.js', 'Node.js', 'Express', 'Buzzer.js', 'Nipple.js'],
         'images' => [
             [
-                'src' => './src/images/zombie-apocalypse/game',
+                'src' => './images/zombie-apocalypse/game',
                 'alt' => 'Multiplayer gamewith surviovrs and zombies',
                 'heading' => 'Gra multiplayer',
                 'description' => 'Strzelaj do zombie i nie daj się ugryźć',
             ],
             [
-                'src' => './src/images/zombie-apocalypse/menu', 
+                'src' => './images/zombie-apocalypse/menu', 
                 'alt' => 'Menu and options of the game',
                 'heading' => 'Menu gry',
                 'description' => 'Wybór nicku i ranking najlepszych graczy',
