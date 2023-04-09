@@ -6,7 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { PurgeCSSPlugin } = require('purgecss-webpack-plugin');
 const glob = require('glob-all');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -18,7 +17,6 @@ module.exports = {
   },
   optimization: {
     usedExports: true, // <- remove unused function
-    minimizer: [new UglifyJsPlugin()],
   },
   devServer: {
     static: path.resolve(__dirname, 'dist'),
