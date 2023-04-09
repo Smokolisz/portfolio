@@ -42,9 +42,7 @@
                 <span itemprop="name">Adam Czwordon</span>
                 <br>
                 <span class="h4" itemscope itemtype="http://schema.org/Event/Job">Programista
-                    <span class="d-inline-block ms-1 profession" itemprop="name">
-                        <span style="color:#474A8A;">Full</span>-<span class="stack">Stack</span>
-                    </span>
+                    <span class="d-inline-block ms-1 profession" itemprop="name">Full Stack</span>
                 </span>
             </h1>
         </header>

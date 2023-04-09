@@ -23,7 +23,7 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.php' })
+    new HtmlWebpackPlugin({ template: './index.php' })
   ],
   module: {
     rules: [
@@ -55,7 +55,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.php' }),
+    new HtmlWebpackPlugin({ template: './index.php' }),
     new MiniCssExtractPlugin({
       filename: 'style.css'
     })
