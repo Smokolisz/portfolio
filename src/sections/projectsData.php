@@ -9,7 +9,7 @@ $projects = [
         "linkText" => "Firany Witex",
         "description" => 
             "<p>W pełni funkcjonalny sklep e-commerce, który stworzyłem od podstaw z wykorzystaniem najnowszych technologii.</p>
-            <p>Wszystko zarządzane przez mój autorski CMS. Łatwe śledzenie zamówień, produktów, kategorii, artykułów na blogu. Przyjazny dla SEO i bardzo dobra wydajność, dzięki zastosowanym przeze mnie najlepszym praktykom, takim jak automatyczna optymalizacja obrazów (mała waga i dopasowana rozdzielczość), zminimalizowany kod. Użyłem też Cloudflare CDN, aby nawet przyspieszyć stronę jeszcze.</p>",
+            <p>Wszystko zarządzane przez mój autorski CMS. Łatwe śledzenie zamówień, produktów, kategorii, artykułów na blogu. Przyjazny dla SEO i bardzo dobra wydajność, dzięki zastosowanym przeze mnie najlepszym praktykom, takim jak automatyczna optymalizacja obrazów (mała waga i dopasowana rozdzielczość), zminimalizowany kod. Użyłem też Cloudflare CDN do zwiększenia dostępności zasobów.</p>",
         'techStack' => ['HTML5', 'CSS3', 'JavaScript', 'Vue.js', 'Laravel', 'Bootstrap', 'Webpack', 'CloudFlare'],
         'images' => [
             [
