@@ -45,4 +45,8 @@ $skills = [
         "name" => "CI/CD",
         "points" => 2
     ],
+    [
+        "name" => "AWS",
+        "points" => 1
+    ],
 ];
